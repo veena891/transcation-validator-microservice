@@ -43,15 +43,26 @@ Client → REST API → Spring Boot Microservice → Database
 POST /api/transactions/validate
 
 Example Request
-``json
+## API Example
+
+POST /api/transactions/validate
+
+### Example Request
+
+```json
 {
   "transactionId": "TXN1001",
   "amount": 250,
   "currency": "USD",
   "status": "PENDING"
 }
-,,,
+```
+
+### Example Response
+
+```json
 {
   "valid": true,
   "message": "Transaction is valid"
-},,,
+}
+```
